@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+    <link rel="icon" href="./img/icon.png" />
+    <title>Food Family</title>
+</head>
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white"> <a class="navbar-brand" href="./index.html"><img
+            src="./img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span
+            class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"> <a class="nav-link" href="./index.html">Welcome<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="./index.html#menu">Today's Menu</a>
+            </li>
+            <!-- <li class="nav-item"> <a class="nav-link" href="./login.html">Split Page</a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="./article.html">Article</a>
+            </li> -->
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="block hero1 my-auto"
+        style="background-image:url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+        <div class="container-fluid text-center">
+            <h1 class="display-2 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">Food Family
+            </h1>
+            <p class="lead text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">We are closed
+                for the moment, but we will still deliver food at your place!</p>
+            <a href="#menu" class="btn-text lead d-inline-block text-white border-top border-bottom mt-4 pt-1 pb-1"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">View Today's Menu</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="maincontent">
+        <div class="container">
+
+            <marquee style="font-weight: bolder; font-size: larger;" behavior="scroll" direction="left">🔥 50%
+                Discount
+                on all you
+                orders... 🔥
+            </marquee>
+
+            <section id="menu">
+                <center>
+                    <h1>Subscription Menu</h1>
+                </center>
+                <div class="block menu1">
+                    <div class="buttons-container">
+                        <a href="#" class="button button--is-active" data-target="pizzaMenu">Healthy Food</a>
+                        <a href="#" class="button" data-target="coffeeMenu">Gym food</a>
+                        <a href="#" class="button" data-target="noodlesMenu">Vegan food</a>
+                    </div>
+                    <!-- Start  Menu -->
+                    <div class="menu menu--is-visible" id="pizzaMenu" data-aos="fade-up">
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/4.jpeg">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">North Indian breakfast</a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Served in 3 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="1"
+                                    data-name="North Indian breakfast" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/1.jpeg">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">South Indian Breakfast</a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Serves in 5 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="2"
+                                    data-name="South Indian Breakfast" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+
+                        <!-- copy -->
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/norlun.png">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">North Indian Lunch</a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Served in 3 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="3"
+                                    data-name="North Indian Lunch" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/soulun.png">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">South Indian Lunch</a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Serves in 5 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="4"
+                                    data-name="South Indian Lunch" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Simple Card -->
+                        <center>
+                            <h1>Homemade Food Blogs</h1>
+                        </center>
+                        <!-- <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card shadow-sm border-0" style="width: 326px;height: 454px;">
+                                        <img class="card-img-top" src="./img/g1.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Just a card</h5>
+                                            <p class="card-text text-muted">
+                                                Some quick example text.
+                                            </p>
+                                            <a href="blog1.html" class="btn btn-info btn-round">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm border-0" style="width: 326px;height: 454px;">
+                                        <img class="card-img-top" src="./img/g1.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Just a card</h5>
+                                            <p class="card-text text-muted">
+                                                Some quick example text.
+                                            </p>
+                                            <a href="blog1.html" class="btn btn-info btn-round">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm border-0" style="width: 326px;height: 454px;">
+                                        <img class="card-img-top" src="./img/g1.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Just a card</h5>
+                                            <p class="card-text text-muted">
+                                                Some quick example text.
+                                            </p>
+                                            <a href="blog1.html" class="btn btn-info btn-round">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <!-- End Healthy Menu -->
+
+                    <!-- Start gym Menu -->
+                    <div class="menu" id="coffeeMenu">
+
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/g1.png">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">South Gym Breakfast</a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Serves in 5 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="5"
+                                    data-name="Gym Breakfast" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/g2.png">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">South Gym Lunch</a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Serves in 5 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="6"
+                                    data-name=" Gym Lunch" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/g3.png">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">South Gym Dinner</a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Serves in 5 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="7"
+                                    data-name=" Gym Dinner" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Coffee Menu -->
+
+
+                    <!-- Start Noodles Menu -->
+                    <div class="menu" id="noodlesMenu">
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/veg1.png">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">Vegan Breakfast </a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Serves in 5 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="8"
+                                    data-name="Vegan Breakfast" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/veg2.png">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">Vegan Lunch </a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Serves in 5 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="9"
+                                    data-name="Vegan Lunch" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="item row align-items-center">
+                            <div class="col-sm-3 pr-5">
+                                <img class="product-img" src="./img/veg3.png">
+                            </div>
+                            <div class="details col-sm-9">
+                                <div class="item__header">
+                                    <a href="article.html" class="item__title">Vegan Dinner </a>
+                                    <span class="item__dots"></span>
+                                    <span class="item__price">₨ 100</span>
+                                </div>
+                                <p class="item__description">Serves in 5 compartment tray</p>
+                                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="10"
+                                    data-name="Vegan Dinner" data-price="100" data-quantity="1"
+                                    data-image="./img/logo.png">Add to cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- End Noodles Menu -->
+                </div>
+                <!-- End block -->
+                <script src="./js/mycart.js"></script>
+                <script src="./js/mycart-custom.js"></script>
+            </section>
+        </div>
+    </div>
+    <div class="nav-item my-cart-icon">
+        <img src="./img/cart.svg" style="width:20px;"> <span class="badge badge-notify my-cart-badge"> </span>
+    </div>
+    <footer class="block footer1 footer text-center">
+        <p>&copy; All rights Reserved</a> by Food Family</p>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/custom-general.js"></script>
+</body>
+
+</html>
